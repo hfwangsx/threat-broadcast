@@ -85,9 +85,9 @@ def get_sys_args(sys_args) :
     top = 30
     auto_commit = False
     gtk = ''
-    mail_smtp = 'smtp.qq.com'
-    mail_user = 'threatbroadcast@qq.com'
-    mail_pass = ''
+    mail_smtp = 'smtp.126.com'
+    mail_user = 'simplemmm@126.com'
+    mail_pass = 'simple...'
     qq_user = ''
     qq_pass = ''
 
