@@ -39,7 +39,8 @@ def to_mail(gtk, cves, smtp, sender, password):
         email['From'] = sender
         email['To'] = ', '.join(receivers)                  # 此处收件人列表必须为逗号分隔的 str
         log.info('[邮件] 收件人清单： %s' % receivers)
-        subject = '威胁情报播报'
+        update_time = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time())).encode("utf-8")  # 登记时间
+        subject = 'IHEPSOC威胁情报播报(%s)' % update_time
         email['Subject'] = Header(subject, 'utf-8')
 
         try:
