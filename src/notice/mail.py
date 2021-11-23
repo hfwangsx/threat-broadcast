@@ -54,7 +54,7 @@ def to_mail(gtk, cves, smtp, sender, password):
 def format_content(cves):
     src_tpl = '    <li><font color="red">%(cnt)d</font>条由 [<a href="%(url)s">%(src)s</a>] 提供</li>'
     mail_tpl =  '''
-<h3>发现最新威胁情报<font color="red">%(total)d</font>条：</h3>
+<h3>老师您好，发现最新威胁情报<font color="red">%(total)d</font>条：</h3>
 <ul>
 %(src_infos)s
 </ul>
@@ -65,7 +65,7 @@ def format_content(cves):
 <br/><br/>
 ++++++++++++++++++++++++++++++++++++++++++++++
 <br/>
-<font color="red">【情报收集与播报支持】</font> https://lyy289065406.github.io/threat-broadcast/
+<font color="red">【IHEPSOC威胁情报播报】</font> 
 '''
     src_infos = []
     cve_infos = []
